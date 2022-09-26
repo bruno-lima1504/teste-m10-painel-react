@@ -10,12 +10,12 @@ const NotFound = () => {
             <p>Não se preocupe ela ainda está em Desenvolvimento!</p>
             <p>Ufa!!</p>
             <p>Para mais projetos e contato:</p>
-            <a href="https://github.com/bruno-lima1504" target="_blank" >GitHub</a>
-            <a href="https://www.linkedin.com/in/bruno-lima-9ba21b242/" target="_blank">Linkedin</a>
+            <a href="https://github.com/bruno-lima1504" target="_blank" rel="noopener" >GitHub</a>
+            <a href="https://www.linkedin.com/in/bruno-lima-9ba21b242/" target="_blank" rel="noopener">Linkedin</a>
             <Link to='/navigation'>
             <p>Voltar!</p>
             </Link>
-            <img src={ erro404} /> 
+            <img src={ erro404} alt="imagem de erro"/> 
                       
         </Div>
     )

@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import styled from "styled-components";
 import { PainelLogin } from "../components/login";
 import { Navigation } from "../components/navigation";
 import { NotFound } from "../components/notfound/notfound";
@@ -6,6 +7,7 @@ import { NotFound } from "../components/notfound/notfound";
 
 const AppRoutes = () => {
     return (
+        <Div>
         <BrowserRouter>
             <Routes>
 
@@ -15,7 +17,13 @@ const AppRoutes = () => {
                 
             </Routes>
         </BrowserRouter>
+        </Div>
     )
 }
+
+const Div = styled.div`
+    width: 100%;
+    height: 100%;
+`
 
 export { AppRoutes }

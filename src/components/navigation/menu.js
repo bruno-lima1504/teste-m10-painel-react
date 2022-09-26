@@ -8,7 +8,7 @@ const Menu = () => {
 
     return (
         <Nav> 
-            <img src= { Logo }/>
+            <img src= { Logo } alt="logo"/>
             <Hamburguer />            
         </Nav>
     )

@@ -15,7 +15,11 @@ const Design = () => {
 }
 
 const Div = styled.div`
-    position: relative;   
+    position: relative;
+    
+    @media (max-width: 825px) {
+        display: none;
+    }
 `
 
 const Img = styled.img`

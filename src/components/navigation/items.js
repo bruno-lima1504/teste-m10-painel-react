@@ -6,7 +6,7 @@ const Items = () => {
     return(
             <Section>
                 <div>
-                    <img src= { ImgComponent } ></img>
+                    <img src= { ImgComponent } alt="imagem de fundo" ></img>
                     <Span > <span><ion-icon name="calendar-clear-outline"></ion-icon></span> <p>2min atrás</p> </Span>                    
                 </div>                      
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesettin...</h3>
@@ -37,6 +37,9 @@ const Section = styled.section`
         @media (max-width: 600px) {
             width: 300px;
         }
+        @media (max-width: 438px) {
+            width: 250px;
+        } 
 
         @media (max-width: 390px) {
             width: 230px;

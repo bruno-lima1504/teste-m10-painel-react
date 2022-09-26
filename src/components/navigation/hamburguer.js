@@ -13,15 +13,15 @@ const Hamburguer = () => {
             <span />
         </Hamburguerstyle>
         <Ul isOpen={isOpen}>        
-            <li > <ion-icon name="cellular-outline"></ion-icon><a>Inicio</a></li>
+            <li > <ion-icon name="cellular-outline"></ion-icon>Inicio</li>
         <Link to="/notfound">
-            <li> <ion-icon name="document-text-outline"></ion-icon><a> Contatos</a></li>
-            <li> <ion-icon name="analytics-outline"></ion-icon><a> Relatórios</a></li>
-            <li> <ion-icon name="person-outline"></ion-icon><a>Perfil</a></li>
-            <li> <ion-icon name="star-outline"></ion-icon><a>Favoritos</a></li>
+            <li> <ion-icon name="document-text-outline"></ion-icon>Contatos</li>
+            <li> <ion-icon name="analytics-outline"></ion-icon>Relatórios</li>
+            <li> <ion-icon name="person-outline"></ion-icon>Perfilli</li>
+            <li> <ion-icon name="star-outline"></ion-icon>Favoritos</li>
         </Link>
         <Link to="/">
-                <li> <ion-icon name="close-circle-outline"></ion-icon><a>Logout</a></li>
+                <li> <ion-icon name="close-circle-outline"></ion-icon>Logout</li>
             </Link>
         </Ul>
         </>
@@ -40,7 +40,7 @@ const Hamburguerstyle = styled.div`
     span {
     height: 2px;
     width: 25px;
-    background-color: blue;
+    background-color: #FF6C22;
     margin-bottom: 4px;
     border-radius: 5px;
     font-weight: 20px;

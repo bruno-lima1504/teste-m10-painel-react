@@ -7,7 +7,7 @@ const Form = () => {
     return (
         <>
             <Main>
-                <img src= { Logo }></img>
+                <img src= { Logo } alt='logotipo' />
                 <h2>Bem vindo ao Painel!</h2>
                 <input placeholder='Insira seu e-mail' />
                 <input placeholder='Insira sua senha' />
@@ -23,6 +23,7 @@ const Main = styled.main`
     display: flex;
     flex-direction: column;    
     width: 468px;
+    
 
     img {
         margin-top: 70px;
@@ -30,13 +31,23 @@ const Main = styled.main`
         margin-bottom: 44px;
         max-width: 190px;
         max-height: 44px;
+
+        @media (max-width: 825px){
+        max-width: 80%;
+        margin: 45px auto 20px auto;
+    }
         
     }
 
     h2 {
         font-size: 25px;
         margin-left: 59px;
-        color: #00000070
+        color: #00000070;
+
+        @media (max-width: 825px){
+        max-width: 80%;
+        margin: 11px auto 11px auto;
+    }
     }
 
     input {
@@ -46,6 +57,11 @@ const Main = styled.main`
         padding: 12px;
         border: solid 1px rgb(0, 0, 0, 0.1);
         border-radius: 5px;
+
+        @media (max-width: 825px){
+        max-width: 80%;
+        margin: 11px auto 11px auto;
+    }
     }
 
     button {
@@ -61,8 +77,16 @@ const Main = styled.main`
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        @media (max-width: 825px){
+        max-width: 100%;
+        margin: auto;
     }
-    
+    }       
+
+    a {     @media (max-width: 825px){
+        max-width: 50%;
+        margin: 11px auto 11px auto;
+    }}
 `;
 
 export { Form }
